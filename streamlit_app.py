@@ -1,3 +1,4 @@
+
 import streamlit as st 
 
 # -------- CSS --------
@@ -107,13 +108,15 @@ if st.button(" Check FLAMES "):
     result = flames[0]
 
     meaning = {
-        "F":"Friend 👫",
-        "L":"Love 💘",
-        "A":"Affection 💞",
-        "M":"Marriage 💍 😘",
-        "E":"Enemy 👿",
-        "S":"Sibling 💗"
+        "F": f"{name1} {name2} you both are Friends 👫",
+       
+        "L":f"{name1} {name2}  Yyou both have Love 💘   ** THAMBI THAPICHUTA PAA **",
+        "A": f"{name1} {name2} you both have Affection 💞  **SOLRATHUKU ONU ILAA**",
+        "M":f"{name1} {name2} you will get Marriage 💍 😘",
+        "E":f"{name1} {name2} you both are  Enemy 👿 *SOOLI MUDICHUPOCHU* ",
+        "S":f"{name1} {name2} you both are Sibling  💗 *SONABATHA POCHA*  "
     }
+    
 
     st.markdown(f"<div class='result'>{meaning[result]}</div>", unsafe_allow_html=True)
 
