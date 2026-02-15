@@ -109,12 +109,12 @@ if st.button(" Check FLAMES "):
     st.session_state.result = flames[0]
 
     meaning = {
-        "F": f"{name1} {name2} Friends 👫",
-        "L":f"{name1} {name2} Love 💘",
-        "A": f"{name1} {name2} Affection 💞",
-        "M":f"{name1} {name2} Marriage 💍",
-        "E":f"{name1} {name2} Enemy 👿",
-        "S":f"{name1} {name2} Sibling 💗"
+        "F": f"{name1} {name2}  you both are Friends 👫" ,
+        "L":f"{name1} {name2}   you both  have Love 💘 <br>** THAMBI THAPICHUTA PAA **",
+        "A": f"{name1} {name2}  you both have  Affection 💞 <br> **SOLRATHUKU ONU ILAA**",
+        "M":f"{name1} {name2}   you both  will get Marriage 💍", 
+        "E":f"{name1} {name2}  you both are Enemy 👿 <br>*SOOTHULA ADI VAAGIYACHU SEYTHULYUM ADI VAGIYACHU*",
+        "S":f"{name1} {name2}  you both are Siblings 💗 <br>*SONABATHA POCHA* "
     }
 
     st.markdown(f"<div class='result'>{meaning[st.session_state.result]}</div> <br>", unsafe_allow_html=True)
